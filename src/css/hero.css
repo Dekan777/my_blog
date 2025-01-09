@@ -26,10 +26,9 @@
   font-weight: bold;
   text-align: center;
   /* width: 208px; Ширина кнопки */
-  height: 47px; 
+  height: 47px;
   border: none;
   border-radius: 2px;
- 
 }
 
 /* for button */
@@ -66,4 +65,46 @@
 
 .hero-line {
   display: flex;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .text-wrapp {
+    width: 506px;
+    margin-right: 0px;
+  }
+  /* .peaple-ellips {
+    
+    height: 170px;
+    width: 170px;
+} */
+.text-wrapp {
+  width: 360px;
+ 
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1152px;
+    padding: 0 100px;
+  }
+  .text-wrapp {
+    width: 506px;
+    margin-right: 100px;
+  }
+  .peaple-ellips {
+    
+    height: 240px;
+    width: 240px;
+}
 }
