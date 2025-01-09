@@ -1,9 +1,10 @@
 export function downloadFile() {
-  const fileUrl = '/Denys_Koshevyi_FrontEndDeveloper.pdf'; // Путь к файлу
+  const fileUrl = 'favicon.svg'; // Путь к файлу
   const a = document.createElement('a');
   a.href = fileUrl;
-  a.download = 'Denys_Koshevyi_FrontEndDeveloper.pdf'; // Имя файла
+  a.download = 'favicon.svg'; // Имя файла
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
 }
+
