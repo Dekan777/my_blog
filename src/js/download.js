@@ -1,8 +1,8 @@
 export function downloadFile() {
-  const fileUrl = 'favicon.svg'; // Путь к файлу
+  const fileUrl = 'Denys_Koshevyi_FrontEndDeveloper.pdf'; // Путь к файлу
   const a = document.createElement('a');
   a.href = fileUrl;
-  a.download = 'favicon.svg'; // Имя файла
+  a.download = 'Denys_Koshevyi_FrontEndDeveloper.pdf'; // Имя файла
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
