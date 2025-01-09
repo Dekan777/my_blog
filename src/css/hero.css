@@ -82,15 +82,13 @@
     width: 506px;
     margin-right: 0px;
   }
-  /* .peaple-ellips {
-    
-    height: 170px;
-    width: 170px;
-} */
-.text-wrapp {
-  width: 360px;
- 
-}
+  
+  .text-wrapp {
+    width: 360px;
+  }
+  .img-ellips {
+    padding-top: 35px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -102,9 +100,8 @@
     width: 506px;
     margin-right: 100px;
   }
-  .peaple-ellips {
-    
-    height: 240px;
-    width: 240px;
-}
+ 
+  .img-ellips {
+    padding-top: 20px;
+  }
 }
