@@ -1,0 +1,69 @@
+.hero-section {
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+
+.hero-title-h {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+}
+
+.hero-title-p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+  text-align: left;
+}
+
+.download-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff6b6b; /* Цвет фона */
+  color: #ffffff; /* Цвет текста */
+  font-weight: bold;
+  text-align: center;
+  /* width: 208px; Ширина кнопки */
+  height: 47px; 
+  border: none;
+  border-radius: 2px;
+ 
+}
+
+/* for button */
+/* .download-resume-btn {
+  display: inline-block;
+  
+  background-color: #ff6b6b; 
+  color: #ffffff; 
+  font-weight: bold;
+  text-align: center;
+  width: 208px; 
+  height: 47px; 
+  border-radius: 2px 0px 0px 0px;
+  opacity: 0px;
+  border-color: #ff6b6b;
+  border: 0px;
+} */
+
+.download-resume-btn:hover {
+  background-color: #ff5a5a;
+}
+
+.span-dowload {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29.38px;
+  text-align: left;
+}
+
+.text-wrapp {
+  width: 506px;
+  margin-right: 100px;
+}
+
+.hero-line {
+  display: flex;
+}

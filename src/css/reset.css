@@ -1,4 +1,6 @@
-h1,
+@import url('../../node_modules/modern-normalize/modern-normalize.css');
+
+Reset styles */ h1,
 h2,
 h3,
 h4,
@@ -12,21 +14,26 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   list-style: none;
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
+  color: currentColor;
 }
 
 button {
   cursor: pointer;
+  font-family: inherit;
+  color: currentColor;
 }
-
+address {
+  font-style: normal;
+}
 img {
   display: block;
   max-width: 100%;
