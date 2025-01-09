@@ -1,5 +1,5 @@
 export function downloadFile() {
-  const fileUrl = '../public/Denys_Koshevyi_FrontEndDeveloper.pdf'; // Путь к файлу
+  const fileUrl = 'public/Denys_Koshevyi_FrontEndDeveloper.pdf'; // Путь к файлу
   const a = document.createElement('a');
   a.href = fileUrl;
   a.download = 'Denys_Koshevyi_FrontEndDeveloper.pdf'; // Имя файла
