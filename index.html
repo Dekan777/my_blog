@@ -6,123 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <script type="module" crossorigin src="/my_blog/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/my_blog/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/my_blog/assets/index-CEuOzNrf.css">
   </head>
   <body>
+    
     <header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/my_blog/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
+    <nav>
+      <div>
+        <!-- menu -->
+        <ul class="nav-list">
+          <li class="nav-item">Works</li>
+          <li class="nav-item">Blog</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+        <div class="mobile-icon-wrap">
+          <button
+            type="button"
+            class="visually-hidden burger-menu js-open-menu"
+            id="open-button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="burger-icon" width="32" height="22">
+              <use href="../img/sprite.svg#burger-nav"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
 
-
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
+      <section class="hero-section">
+  <div class="container hero-line">
+    <div class="text-wrapp">
+      <h1 class="hero-title-h">Hi, I'm Denys,<br> Front-end developer.</h1>
+      <p class="hero-title-p">
+        I'm a team player, have good communication skills, constantly strive for
+        improvement and try to follow best practices in the industry. Always
+        ready to take on difficult tasks.
+      </p>
+      <!-- <a
+        href="https://drive.google.com/file/d/1QL4IqVo1cJq73Dp6duk64kvWAAydi0zX/view?usp=sharing"
+        class="download-resume-btn"
+        download
       >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/my_blog/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+        <span class="span-dowload">Download Resume</span>
+      </a> -->
+
+      <button id="downloadButton" class="download-resume-btn">
+        <span class="span-dowload">Download Resume</span>
+      </button>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+
+    <div class="img-ellips">
+      <img
+        class="peaple-ellips"
+        src="../img/desctop_home_ellipse@1x.png"
+        srcset="../img/desctop_home_ellipse@1x.png 1x, ../img/desctop_home_ellipse@2x.png 2x"
+        alt="man"
+        width="243"
+        height="243"
+      />
+    </div>
   </div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
+      <section class="section-title">
+  <div class="container container-add">
+    <div class="post-add">
+      <h2 class="recent-posts-title">Recent posts</h2>
+      <a href="#" class="href-view">View all</a>
+    </div>
+    <div class="post-article">
+      <article class="post">
+        <h3 class="post-title">Making a design system from scratch</h3>
+        <div class="post-meta">
+          12 Feb 2020 <span class="separator">|</span> Design, Pattern
+        </div>
+        <div class="post-content">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat. duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </div>
+      </article>
+
+      <article class="post">
+        <h3 class="post-title">Creating pixel perfect icons in Figma</h3>
+        <div class="post-meta">
+          12 Feb 2020 <span class="separator">|</span> Design, Pattern
+        </div>
+        <div class="post-content">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud a
+        </div>
+      </article>
+    </div>
   </div>
-</article>
+</section>
 
     </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
+    
 
   </body>
 </html>
