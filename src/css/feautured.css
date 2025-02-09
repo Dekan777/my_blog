@@ -1,10 +1,19 @@
-.text-h2 {
+.project {
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+.text-top {
   margin-top: 15px;
   margin-bottom: 11px;
+  
+  
+  font-size: 22px;
+  line-height: 60px;
+  letter-spacing: 0px;
 }
 
 .img-food {
-    width: 246px;
-    height: 180px;
-    border-radius: 6px;
-  }
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+}
