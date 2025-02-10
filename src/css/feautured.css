@@ -1,6 +1,8 @@
 .project {
+  display: flex;
+  gap: 15px;
   margin-top: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .text-top {
@@ -45,7 +47,35 @@
   height: 25px;
   border-radius: 16px;
   background: #142850;
-  display: flex; 
+  display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+}
+
+.design-data {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.text-reit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-data-next {
+  color: #8695A4;
+  
+}
+
+.project {
+  margin-top: 22px;
+  margin-bottom: 15px;
+  padding-bottom: 15px; /* Отступ перед линией */
+  border-bottom: 1px solid #E0E0E0; /* Серый цвет линии */
+}
+
+.project:last-child {
+  border-bottom: none; /* Убираем линию у последнего элемента */
 }
