@@ -14,3 +14,9 @@
   line-height: 29.38px;
 }
 
+.nav-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29.38px;
+  font-weight: 700;
+}
