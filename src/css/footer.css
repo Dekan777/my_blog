@@ -1,0 +1,25 @@
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .social-media {
+    margin-bottom: 10px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .social-media img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #666;
+  }
+  
