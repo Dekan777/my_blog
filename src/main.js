@@ -1,3 +1,6 @@
+import { downloadFile } from './js/download.js';
+import { initBackToTop } from './js/scroll.js';
+
 document.addEventListener('DOMContentLoaded', function() {
   const navItems = document.querySelectorAll('.nav-item');
   const currentPage = window.location.pathname.split('/').pop(); // Получаем имя текущего файла
@@ -32,27 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Код для кнопки "Наверх"
-const backToTopButton = document.getElementById('back-to-top');
 
-// Показываем кнопку при прокрутке
-function showButton() {
-  if (window.scrollY > 300) {
-    backToTopButton.style.display = 'block';
-  } else {
-    backToTopButton.style.display = 'none';
-  }
-}
+//Scrolling
+document.addEventListener('DOMContentLoaded', initBackToTop);
 
-// Прокрутка наверх
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// Добавляем события для прокрутки и клика
-window.addEventListener('scroll', showButton);
-backToTopButton.addEventListener('click', scrollToTop);
-
-// Дополнительный функционал для загрузки файла (если нужно)
-import { downloadFile } from './js/download';
+//Downloading
 document.getElementById('downloadButton').addEventListener('click', downloadFile);
