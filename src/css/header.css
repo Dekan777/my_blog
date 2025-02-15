@@ -18,14 +18,13 @@
   font-size: 20px;
   line-height: 29.38px;
   font-weight: 700;
-}
-
-.nav-studio {
   position: relative;
   display: inline-block;
 }
 
-.nav-studio::after {
+
+
+.nav-item::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -39,7 +38,7 @@
   transition: width 0.3s ease, opacity 0.3s ease; /* Плавный переход для ширины и видимости */
 }
 
-.nav-studio.active::after {
+.nav-item.active::after {
   width: 100%; /* Подчеркивание увеличивается */
   opacity: 1; /* Подчеркивание становится видимым */
 }

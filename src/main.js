@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
 
   // Получаем все элементы навигации
-  const navLinks = document.querySelectorAll('.nav-studio');
+  const navLinks = document.querySelectorAll('.nav-item');
 
   navLinks.forEach(link => {
     // Убираем класс 'active' у всех
