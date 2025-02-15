@@ -1,49 +1,58 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Получаем текущий путь страницы без слэша в начале
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+document.addEventListener('DOMContentLoaded', function() {
+  const navItems = document.querySelectorAll('.nav-item');
+  const currentPage = window.location.pathname.split('/').pop(); // Получаем имя текущего файла
 
-  // Получаем все элементы навигации
-  const navLinks = document.querySelectorAll('.nav-item');
+  navItems.forEach(item => {
+    const itemHref = item.getAttribute('href').split('/').pop(); // Получаем имя файла ссылки
 
-  navLinks.forEach(link => {
     // Убираем класс 'active' у всех
-    link.classList.remove('active');
+    item.classList.remove('active');
 
-    // Проверяем, если ссылка ведёт на текущий путь, добавляем 'active'
-    if (link.getAttribute('href').includes(currentPath)) {
-      link.classList.add('active');
+    // Если текущий путь совпадает с href, добавляем класс 'active'
+    if (itemHref === currentPage) {
+      item.classList.add('active'); // Активируем элемент
     }
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const navItems = document.querySelectorAll('.work-nav-item');
+  const currentPage = window.location.pathname.split('/').pop(); // Получаем имя текущего файла
 
-// main.js
+  navItems.forEach(item => {
+    const itemHref = item.getAttribute('href').split('/').pop(); // Получаем имя файла ссылки
 
-// Находим кнопку
+    // Убираем класс 'active' у всех
+    item.classList.remove('active');
+
+    // Если текущий путь совпадает с href, добавляем класс 'active'
+    if (itemHref === currentPage) {
+      item.classList.add('active'); // Активируем элемент
+    }
+  });
+});
+
+// Код для кнопки "Наверх"
 const backToTopButton = document.getElementById('back-to-top');
 
-// Функция для показа кнопки
+// Показываем кнопку при прокрутке
 function showButton() {
   if (window.scrollY > 300) {
-    backToTopButton.style.display = 'block'; // Показываем кнопку, если прокручено больше 300px
+    backToTopButton.style.display = 'block';
   } else {
-    backToTopButton.style.display = 'none'; // Скрываем кнопку, если меньше 300px
+    backToTopButton.style.display = 'none';
   }
 }
 
-// Функция для прокрутки наверх
+// Прокрутка наверх
 function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавная прокрутка к верху
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Добавляем слушатель событий для прокрутки
+// Добавляем события для прокрутки и клика
 window.addEventListener('scroll', showButton);
-
-// Добавляем событие клика на кнопку
 backToTopButton.addEventListener('click', scrollToTop);
 
-
+// Дополнительный функционал для загрузки файла (если нужно)
 import { downloadFile } from './js/download';
-document
-  .getElementById('downloadButton')
-  .addEventListener('click', downloadFile);
+document.getElementById('downloadButton').addEventListener('click', downloadFile);
