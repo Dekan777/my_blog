@@ -20,3 +20,21 @@
   line-height: 29.38px;
   font-weight: 700;
 }
+
+
+.nav-studio.current {
+  /* color: #404bbf; */
+  position: relative; /* Убедись, что у ссылки есть относительное позиционирование */
+  display: inline-block;
+}
+
+.nav-studio.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 4px;
+  background-color: #33343a;
+  border-radius: 2px;
+  width: 100%;
+}
