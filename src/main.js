@@ -17,6 +17,32 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// main.js
+
+// Находим кнопку
+const backToTopButton = document.getElementById('back-to-top');
+
+// Функция для показа кнопки
+function showButton() {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = 'block'; // Показываем кнопку, если прокручено больше 300px
+  } else {
+    backToTopButton.style.display = 'none'; // Скрываем кнопку, если меньше 300px
+  }
+}
+
+// Функция для прокрутки наверх
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' }); // Плавная прокрутка к верху
+}
+
+// Добавляем слушатель событий для прокрутки
+window.addEventListener('scroll', showButton);
+
+// Добавляем событие клика на кнопку
+backToTopButton.addEventListener('click', scrollToTop);
+
+
 import { downloadFile } from './js/download';
 document
   .getElementById('downloadButton')

@@ -42,3 +42,25 @@
   width: 100%; /* Подчеркивание увеличивается */
   opacity: 1; /* Подчеркивание становится видимым */
 }
+
+/* Кнопка "Наверх" */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #48484e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Кнопка скрыта по умолчанию */
+  z-index: 1000; /* Чтобы кнопка была поверх остальных элементов */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+  background-color: #333; /* Темнее при наведении */
+}
+
