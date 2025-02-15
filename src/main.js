@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', initBackToTop);
 
 //Downloading
 addEventListeners();
-
 document.addEventListener('DOMContentLoaded', function () {
   const navItems = document.querySelectorAll('.nav-item');
   const currentPage = window.location.pathname.split('/').pop(); // Получаем имя текущего файла
@@ -14,15 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
   navItems.forEach(item => {
     const itemHref = item.getAttribute('href').split('/').pop(); // Получаем имя файла ссылки
 
-    // Убираем класс 'active' у всех
+    // Убираем класс 'active' у всех элементов
     item.classList.remove('active');
 
     // Если текущий путь совпадает с href, добавляем класс 'active'
-    if (itemHref === currentPage) {
+    // Также исключаем пустое значение href
+    if (itemHref === currentPage && itemHref !== '') {
       item.classList.add('active'); // Активируем элемент
     }
   });
 });
+
 
 
 
