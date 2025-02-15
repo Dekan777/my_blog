@@ -6,15 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.nav-studio');
 
   navLinks.forEach(link => {
-    // Убираем класс 'current' у всех
-    link.classList.remove('current');
+    // Убираем класс 'active' у всех
+    link.classList.remove('active');
 
-    // Проверяем, если ссылка ведёт на текущий путь, добавляем 'current'
+    // Проверяем, если ссылка ведёт на текущий путь, добавляем 'active'
     if (link.getAttribute('href').includes(currentPath)) {
-      link.classList.add('current');
+      link.classList.add('active');
     }
   });
 });
+
 
 import { downloadFile } from './js/download';
 document

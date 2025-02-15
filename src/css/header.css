@@ -1,6 +1,5 @@
 .header {
   padding: 25px 0px;
-  /* position: absolute; */
   width: 100%;
 }
 
@@ -21,20 +20,26 @@
   font-weight: 700;
 }
 
-
-.nav-studio.current {
-  /* color: #404bbf; */
-  position: relative; /* Убедись, что у ссылки есть относительное позиционирование */
+.nav-studio {
+  position: relative;
   display: inline-block;
 }
 
-.nav-studio.current::after {
+.nav-studio::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Центрируем подчеркивание */
   bottom: -2px;
   height: 4px;
-  background-color: #33343a;
+  background-color: #48484e;
   border-radius: 2px;
-  width: 100%;
+  width: 0; /* Начальная ширина подчеркивания */
+  opacity: 0; /* Подчеркивание скрыто */
+  transition: width 0.3s ease, opacity 0.3s ease; /* Плавный переход для ширины и видимости */
+}
+
+.nav-studio.active::after {
+  width: 100%; /* Подчеркивание увеличивается */
+  opacity: 1; /* Подчеркивание становится видимым */
 }
