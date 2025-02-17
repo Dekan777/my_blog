@@ -1,6 +1,8 @@
 import { addEventListeners } from './js/download.js';
 import { initBackToTop } from './js/scroll.js';
 
+
+
 //Scrolling
 document.addEventListener('DOMContentLoaded', initBackToTop);
 
